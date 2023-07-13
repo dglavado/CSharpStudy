@@ -1,0 +1,41 @@
+--Prompt de Comando (cmd)
+
+//Lista:
+dotnet new --list
+
+// Criando Solução via CLI
+dotnet new sln -n Curso
+
+// Criando Projeto via CLI
+dotnet new console -n ProjetosAulas -f net6.0
+/*
+não disponível
+*/
+
+//Adicionando Projeto a solução
+dotnet sln Curso.sln add ProjetosAulas
+
+//Compilar
+dotnet build
+
+//Limpar
+dotnet clean
+
+//Executar
+dotnet run --project ProjetoAulas
+
+//Abrir visual Studio Code
+dotnet code .
+
+/*
+Inteiros:
+byte: 0 a 255
+short: -32768 a 32767
+int: -2.147.483.648 a 2.147.483.647
+long: -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807
+
+Pontos Flutuantes:
+float: 9 dígitos
+double: 17 dígitos
+decimal: 29 dígitos
+*/
